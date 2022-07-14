@@ -50,7 +50,6 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    // 'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -64,7 +63,7 @@ function build() {
     'app/**/*.html',
     'app/css/style.min.css',
     'app/js/main.min.js',
-    'app/fonts/**/*' //добавила
+    'app/fonts/**/*'
   ], { base: 'app' })
     .pipe(dest('dist'))
 }

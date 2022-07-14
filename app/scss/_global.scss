@@ -1,8 +1,9 @@
 body {
-  @extend %red;
+  background-color: $black;
+  @extend %semiBold;
   font-size: 16px;
   line-height: 1.5;
-  color: $default;
+  color: $white;
 }
 
 .container {
@@ -11,9 +12,15 @@ body {
   max-width: 1200px;
 }
 
+.big-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1400px;
+}
+
 a {
-  @extend %red;
-  color: $default;
+  @extend %semiBold;
+  color: $white;
 }
 
 button {
@@ -22,9 +29,6 @@ button {
 }
 
 .title {
-  margin-bottom: 50px;
-  @extend %red;
-  color: $default;
-  font-size: 56px;
-  line-height: 1.5;
+  font-size: 120px;
+  line-height: 1;
 }
