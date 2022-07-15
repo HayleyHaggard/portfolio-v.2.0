@@ -77,16 +77,7 @@ $maxWidth: 1280;
 @media (max-width: 767px) {
   .header {
     &__date-wrapper {
-      justify-content: center;
-      p {
-        padding: 0 10px;
-      }
-      &::after {
-        width: 0;
-        content: '/';
-        top: 0;
-        left: 48%;
-      }
+      display: none;
     }
   }
 

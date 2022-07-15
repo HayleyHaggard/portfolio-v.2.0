@@ -1,0 +1,232 @@
+main {
+  @include themify($themes) {
+    background-color: themed('whiteColor');
+    color: themed('blackColor');
+  }
+}
+
+.header {
+  @include themify($themes) {
+    background-color: themed('whiteColor');
+  }
+  &__logo {
+    @include themify($themes) {
+      svg {
+        path {
+          fill: themed('blackColor');
+        }
+      }
+    }
+  }
+  &__btn {
+    &::before,
+    &::after,
+    span {
+      @include themify($themes) {
+        background-color: themed('blackColor');
+      }
+    }
+  }
+  &__date-wrapper {
+    @include themify($themes) {
+      color: themed('blackColor');
+    }
+    &::after {
+      @include themify($themes) {
+        background-color: themed('blackColor');
+      }
+    }
+  }
+  &.header--active {
+    .header__btn {
+      &::before,
+      &::after {
+        @include themify($themes) {
+          background-color: themed('whiteColor');
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  @include themify($themes) {
+    background-color: themed('blackColor');
+  }
+  &__list-link {
+    @include themify($themes) {
+      color: themed('whiteColor');
+    }
+  }
+  &__list-link::before {
+    @include themify($themes) {
+      background-color: themed('whiteColor');
+    }
+  }
+  &__list-link:hover {
+    @include themify($themes) {
+      color: themed('blackColor');
+    }
+  }
+  &__info-wrapper {
+    span {
+      @include themify($themes) {
+        color: themed('whiteColor');
+      }
+    }
+  }
+  &__info-email {
+    @include themify($themes) {
+      color: themed('whiteColor');
+    }
+    &::before,
+    &::after {
+      @include themify($themes) {
+        background-color: themed('whiteColor');
+      }
+    }
+  }
+  &__info-link {
+    @include themify($themes) {
+      color: themed('whiteColor');
+    }
+  }
+
+}
+
+.top {
+  @include themify($themes) {
+    background-color: themed('whiteColor');
+  }
+  &__title-item {
+    @include themify($themes) {
+      border-left: 2px solid themed('blackColor');
+    }
+    p {
+      @include themify($themes) {
+        color: themed('blackColor');
+      }
+    }
+  }
+  &__title {
+    @include themify($themes) {
+      color: themed('blackColor');
+    }
+  }
+}
+
+.about {
+  &__arrow {
+    @include themify($themes) {
+      svg {
+        path {
+          fill: themed('blackColor');
+        }
+      }
+    }
+  }
+}
+
+.works {
+  &__item {
+    &:hover {
+      @include themify($themes) {
+        background-color: themed('blackColor');
+        color: themed('whiteColor');
+      }
+      .works__num {
+        span {
+          @include themify($themes) {
+            background-color: themed('whiteColor');
+          }
+        }
+        p {
+          @include themify($themes) {
+            color: themed('whiteColor');
+          }
+        }
+      }
+      .works__item-title {
+        @include themify($themes) {
+          border-bottom: 3px solid themed('whiteColor');
+        }
+      }
+      .works__item-link {
+        @include themify($themes) {
+          color: themed('whiteColor');
+          svg {
+            path {
+              fill: themed('whiteColor');
+            }
+          }
+        }
+      }
+    }
+  }
+  &__num {
+    span {
+      @include themify($themes) {
+        background-color: themed('blackColor');
+      }
+    }
+  }
+  &__item-title {
+    @include themify($themes) {
+      border-bottom: 3px solid themed('blackColor');
+    }
+  }
+  &__item-link {
+    @include themify($themes) {
+      color: themed('blackColor');
+      svg {
+        path {
+          fill: themed('blackColor');
+        }
+      }
+    }
+  }
+}
+
+.skills {
+  &__item {
+    @include themify($themes) {
+      border-bottom: 2px solid themed('blackColor');
+    }
+    span:before {
+      @include themify($themes) {
+        background-color: themed('whiteColor');
+      }
+    }
+  }
+}
+
+.footer {
+  @include themify($themes) {
+    background-color: themed('whiteColor');
+  }
+  &__inner {
+    a,
+    span {
+      @include themify($themes) {
+        color: themed('blackColor');
+      }
+    }
+  }
+  .menu__info-email {
+    &::before,
+    &::after {
+      @include themify($themes) {
+        background-color: themed('blackColor');
+      }
+    }
+  }
+  &__text {
+    @include themify($themes) {
+      color: themed('blackColor');
+    }
+  }
+}
+
+
+
+@import 'media';
