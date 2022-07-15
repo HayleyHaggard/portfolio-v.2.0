@@ -2,7 +2,6 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
-@import 'libs';
 @import 'theme';
 
 .header {
@@ -172,12 +171,7 @@
   top: 0;
   background-color: $white;
   transform: translateY(-200%);
-
   transition: all 1s ease-out;
-  @include themify($themes) {
-    background-color: themed('backgroundColor');
-  }
-
   &__wrapper {
     height: 100vh;
     display: flex;
@@ -204,9 +198,6 @@
     z-index: 0;
     overflow: hidden;
     transition: color .3s ease-out;
-    @include themify($themes) {
-      color: themed('textColor');
-    }
   }
   &__list-link::before {
     content: "";
@@ -246,9 +237,6 @@
     font-size: 42px;
     color: $black;
     position: relative;
-    @include themify($themes) {
-      color: themed('textColor');
-    }
     &::before,
     &::after {
       position: absolute;
@@ -293,7 +281,6 @@
       opacity: 1;
     }
   }
-
 }
 
 
