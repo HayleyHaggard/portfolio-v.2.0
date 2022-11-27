@@ -423,7 +423,11 @@
   }
   &__item-subtitle {
     margin-top: auto;
-    font-size: 22px;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  &__item-info {
+    font-size: 16px;
   }
   &__item-title {
     margin-bottom: 30px;
